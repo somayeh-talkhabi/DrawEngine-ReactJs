@@ -1,0 +1,31 @@
+generator client {
+  provider = "prisma-client-js"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model draws {
+  draw_id            Int     @id @default(autoincrement())
+  prize_id           Int?
+  winning_postalcode String? @db.VarChar(255)
+  prizes             prizes? @relation(fields: [prize_id], references: [prize_id], onUpdate: NoAction, map: "prize_id_fk")
+}
+
+model prizes {
+  prize_id        Int     @id @default(autoincrement())
+  amount_in_cents Int?
+  draws           draws[]
+}
+
+model tickets {
+  ticket_id         Int     @id @default(autoincrement())
+  postalcode        String? @db.VarChar(255)
+  username          String? @unique @db.VarChar(255)
+  housenumber       String? @db.VarChar(255)
+  city              String? @db.VarChar(255)
+  amount_of_tickets Int?
+}
