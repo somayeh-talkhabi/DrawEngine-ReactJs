@@ -1,6 +1,8 @@
 # Frontend Assessment
 
-This project is a **Frontend Assessment**. The backend is already implemented and documented.
+Welcome to the lottery assessment! In this repository you will find 2 projects.
+
+Containing a backend and a frontend project, the backend is already implemented since this is a frontend assessment.
 
 ## Getting Started (Frontend)
 
@@ -17,13 +19,16 @@ This project is a **Frontend Assessment**. The backend is already implemented an
    npm run dev
    ```
 
-   The app will be available at [http://localhost:5173](http://localhost:5173) (or as indicated in your terminal).
-
 3. **API Base URL:**
    - The frontend communicates with the backend at `http://localhost:3000/api`.
    - The backend must be running for the frontend to function correctly.
 
-## Backend API
+## Backend
+
+The backend is a project build with [HonoJS](https://hono.dev/), a small backend framework inspired by Express. Is also has a docker-compose.yml file. This file will setup a postgress Database and seed it with some fake data.
+Here you can see the ERD:
+
+![ERD](./erd.png)
 
 - The backend is already implemented and documented.
 - For API endpoints, usage, and documentation, see [`backend/README.md`](./backend/README.md).
