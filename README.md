@@ -64,5 +64,6 @@ You are free to select other tools as you go but these should be in the end resu
 ## Side notes
 
 - Not everything has to be finished but the draw engine should work, that's the most important part.
+- Think about A11y (WCAG 2.1 AA)
 - Tests are encouraged and a big plus.
 - You can spend as much time on as you like but the time invested should be reflected in the end result
