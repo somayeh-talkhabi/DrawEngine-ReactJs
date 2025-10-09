@@ -47,19 +47,19 @@ You are free to select other tools as you go but these should be in the end resu
 
 ### Business rules
 
-- If a prize is won, and the person has multiple tickets, the prize wil be increased times the amount of tickets.
-  So if the prize is 50 euros and a person has `5` tickets, the prize will be `250`.
-- If a prize has been selected and multiple people have the same postal code, the prize is divided by the amount of people with
-  the same postalcode.
+Prizes are shared across a postcal code, so the total prize will always be devided by the amount of tickets that match the drawn postcode. This means:
+
+- If a prize has been selected and multiple people have the same postal code and just one ticket, the prize will be equally divided by the amount of people within the selected postal code.
+- If a prize is won by multiple people and some winners have more than one ticket, they get a bigger share of the prize.
 
 ### Features
 
 - Must be able to initiate draws
 - Must be able to show the winner
 - Must have multiple pages so we don't show one page that is extremily busy
-- Prize should be correctly calculated
+- The won prizes should be correctly calculated
 - Prizes should have an overview so people can see what they can win
-- Could look like a product from the lotteries
+- Could look like a product from the Lotteries
 
 ## Side notes
 
