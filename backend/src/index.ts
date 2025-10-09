@@ -29,7 +29,7 @@ api.doc('/doc', {
         description: 'API documentation for the Lottery Assessment project'
     }
 })
-api.get('/ui', swaggerUI({ url: '/doc' }))
+api.get('/ui', swaggerUI({ url: '/api/doc' }))
 
 api.onError(errorHandler as any)
 
